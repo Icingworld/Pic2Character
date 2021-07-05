@@ -2,6 +2,7 @@
 
 ### What you need ###
 import pygame ———— pip install <font color="#dd0000">pygame</font>
+
 import cv2 ———— pip install <font color="#dd0000">opencv-python</font>
 
 ### Something you can change ###
