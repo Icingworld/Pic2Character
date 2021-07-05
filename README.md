@@ -29,7 +29,9 @@ get a new character.txt which contains weights of characters
 get a trans.jpg and a pygame window showing the progress of covering
 
 Raw Picture
+
 ![Raw](https://github.com/Icingworld/Pic2Character/edit/main/preview/234.jpeg)
 
 Translated
+
 ![Translated](https://github.com/Icingworld/Pic2Character/edit/main/preview/trans.jpg)
