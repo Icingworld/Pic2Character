@@ -4,15 +4,16 @@ import pygame
 
 global crop, size
 block = 10
+path = ""  # path of raw pic
 character_list = []
 character_list_weight = []
 test = []
 
 
-def pic2thr(path):
+def pic2thr(path_):
     global crop, size
     # 图片灰度化，并进行裁剪
-    img = cv2.imread(path, 0)
+    img = cv2.imread(path_, 0)
     size = img.shape
     if (size[1] % block) != 0:
         zuo = int(size[1] % block / 2)
@@ -47,7 +48,7 @@ def make_list():
 
 
 make_list()
-pic2thr("234.jpeg")
+pic2thr(path)
 weight = [0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.005, 0.004]
 charge = 1
 change = 0
@@ -76,8 +77,8 @@ def write(content, x, y):
     draw(text, x, y)
 
 
-def draw(path, x, y):
-    screen.blit(path, (x, y))
+def draw(_path, x, y):
+    screen.blit(_path, (x, y))
     pygame.display.update()
 
 
